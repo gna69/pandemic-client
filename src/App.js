@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Map from './app/map/map';
+import { Counter } from './app/counter/counter';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -23,7 +24,9 @@ function App() {
       <Item>xs=4</Item>
     </Grid>
     <Grid item xs={4}>
-      <Item>xs=4</Item>
+      <Item>
+        <Counter />
+      </Item>
     </Grid>
     <Grid item xs={8}>
       <Item>
